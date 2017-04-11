@@ -1,7 +1,7 @@
 # Exercise 3: Working with Data Frames
 
 # Load R's "USPersonalExpenditure" dataest using the `data()` function
-
+my.data <- data('USPersonalExpenditure')
 
 # The variable USPersonalExpenditure is now accessible to you. Unfortunately, it's not a data.frame
 # Test this using the is.data.frame function
@@ -11,16 +11,16 @@
 # to convert it a data.farme
 
 # Create a new variable by passing the USPersonalExpenditure to the data.frame function
-
+my.data <- data.frame('USPersonalExpenditure', stringsAsFactors=FALSE)
 
 # What are the column names of your dataframe?
-
+print(my.data)
 
 # Why are they so strange?
-
+#same as the name we passed into data.frame
 
 # What are the row names of your dataframe?
-
+# 1
 
 # Create a column `category` that is equal to your rownames
 
